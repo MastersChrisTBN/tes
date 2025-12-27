@@ -1,0 +1,6 @@
+{
+  "appId": "com.tunnel.manager.pro",
+  "appName": "Tunnel Manager Pro",
+  "webDir": "www",
+  "bundledWebRuntime": false
+}

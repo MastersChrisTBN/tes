@@ -239,6 +239,12 @@ nav ul li a:hover {
     width: 100%;
     border-collapse: collapse;
     background-color: #333;
+    min-width: 500px; /* Ensure table doesn't squish too much */
+}
+
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 .result-table th, .result-table td {
@@ -320,4 +326,54 @@ footer {
     color: #fff;
     text-decoration: none;
     cursor: pointer;
+}
+
+/* ===========================
+   RESPONSIVE STYLES (MOBILE)
+   =========================== */
+@media screen and (max-width: 768px) {
+    /* Stack Header Content */
+    header .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* Adjust Nav for Mobile */
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin: 5px;
+    }
+
+    /* Hero Section Adjustment */
+    .hero {
+        height: auto;
+        padding: 80px 0;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    /* Form Container Padding */
+    .bet-form-container {
+        padding: 20px;
+    }
+
+    /* Modal Responsive */
+    .modal-content {
+        width: 95%;
+        margin: 10% auto;
+    }
 }
